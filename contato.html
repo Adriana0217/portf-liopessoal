@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contato - Adriana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Adriana Mateus - Portfólio Profissional</h1>
+      <nav>
+        <a href="index.html">Sobre mim</a>
+        <a href="formacao.html">Formação</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Seção com informações de contato -->
+      <section>
+        <h2>Informações de Contato 💻📧☎️</h2>
+        <p>Entre em contato comigo através dos canais abaixo:</p>
+        <ul>
+          <li><strong>Email:</strong> adriana_mateus@hotmail.com</li>
+          <li>
+            <strong>LinkedIn:</strong>
+            <a
+              href="https://www.linkedin.com/in/adriana-mateus-880957329/"
+              target="_blank"
+              >linkedin.com/in/adriana-mateus-880957329</a
+            >
+          </li>
+          <li>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/Adriana0217" target="_blank"
+              >github.com/Adriana0217</a
+            >
+          </li>
+          <li>
+            <strong>Telefone:</strong> (41) 98181-0217
+            <!-- Botão que abre o WhatsApp com o número -->
+            <button onclick="abrirWhatsapp()">Whatsapp</button>
+          </li>
+        </ul>
+      </section>
+      <!-- Seção com formulário de contato -->
+      <section>
+        <h2>Entre em contato, terei prazer em responder!</h2>
+        <form>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        © <span id="current-year"></span> Adriana - Todos os direitos reservados
+      </p>
+    </footer>
+    <!--“Coloquei esse script pra manter o ano do rodapé sempre atualizado automaticamente, vi que é uma boa prática e quis aplicar.”
+  PS: aula de referência - Hashtag Treinamentos-->
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+
+    <!-- Script para abrir o link do WhatsApp em nova aba -->
+    <script>
+      function abrirWhatsapp() {
+        window.open("https://wa.me/5541981810217", "_blank");
+      }
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
